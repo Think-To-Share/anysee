@@ -1,0 +1,40 @@
+.anysee-main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #000;
+    background-repeat: no-repeat;
+    .main-text{
+        // align-items: flex-end; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-grow: 1;
+       .anysee-heading{
+            font-family: $secondary-font;
+            font-weight: 700;
+            font-size: 4em;
+            text-transform: uppercase;
+            color: #fff;
+            span{
+                font-weight: 800;
+            }
+        }
+        .anysee-heading-text{
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 4.5em;
+            color: #fff;
+        }
+        .anysee-text{
+            width: 50%;
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+    }   
+}
