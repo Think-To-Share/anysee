@@ -3,12 +3,17 @@
     padding-left:50px;
     padding-right:50px;
     .anysee-header-menu{
+        position: relative;
+        z-index: 2;
         .anysee-menu{
             display: flex;
             justify-content: space-between;
             .logo-side{
                 img{
-                    width:7%;
+                    width:80px;
+                    @media (min-width: 992px){
+                        width:115px;
+                    }
                 }
             }
             .anysee-btn-container{
@@ -16,11 +21,18 @@
                     text-decoration: none;
                     text-align: center;
                     color: #fff;
-                    font-size: 1.5em;
-                    padding: 12px 53px;
+                    font-size: 1em;
+                    padding: 8px 30px;
                     font-weight: 400;
                     font-family: $primary-font;
                     background: linear-gradient(to bottom, rgba(252,42,252,1) 0%,rgba(109,44,132,1) 100%);
+                    display: inline-block;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                    @media(min-width: 768px){
+                        font-size: 1.2em;
+                        padding: 12px 53px;
+                    }
                 }
             }
         }

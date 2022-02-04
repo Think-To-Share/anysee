@@ -2,7 +2,7 @@
   "name": "anysee",
   "private": "true",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html idj.html"
   },
   "keywords": [],
   "author": "",

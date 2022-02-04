@@ -11,21 +11,29 @@
         flex-direction: column;
         justify-content: flex-end;
         flex-grow: 1;
+        position: relative;
+        z-index: 2;
        .anysee-heading{
             font-family: $secondary-font;
             font-weight: 700;
-            font-size: 4em;
+            font-size: 3em;
             text-transform: uppercase;
             color: #fff;
             span{
                 font-weight: 800;
             }
+            @media (min-width: 768px) {
+                font-size: 4em;
+            }
         }
         .anysee-heading-text{
             font-family: $primary-font;
             font-weight: 400;
-            font-size: 4.5em;
+            font-size: 2.5em;
             color: #fff;
+            @media (min-width: 768px){
+                font-size: 4.5em;
+            }
         }
         .anysee-text{
             width: 50%;
@@ -35,6 +43,76 @@
             margin: 0;
             padding: 0;
             color: #fff;
+            margin-bottom: 50px;
+            display: none;
+            @media (min-width: 768px){
+                display: block;
+            }
+        }
+        .grid-section{
+            background: linear-gradient(to bottom, rgba(13,13,13,0.49) 0%,rgba(93,93,93,0.49) 100%);
+            .grid-text{
+                padding: 0;
+                margin: 0;
+                color: #fff;  
+            }
         }
     }   
+    .icon-brand{
+        display: none;
+        .icon-main{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 22px;
+                    border-top: 0.1px solid #4a4a4a;
+                    position: relative;
+                    z-index: 2;
+                    background: linear-gradient(to bottom, rgba(13,13,13,0.49) 0%,rgba(93,93,93,0.49) 100%);
+            li{
+                list-style-type: none;
+                position: relative;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-family: $primary-font;
+                    font-size: 2.5em;
+                    padding: 13px 7px;
+                }
+                &::before{
+                content: " ";
+                position: absolute;
+                border-bottom: 14px solid transparent;
+                border-top: 11px solid transparent;
+                border-left: 20px solid #fff;
+                top: -24%;
+                transform: translateY(-50%);
+                left: 50%;
+                }
+            }
+        }
+        @media (min-width: 768px){
+            display: block;
+        }
+    }
+    .myVideo{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%; 
+        min-height: 100%;
+    }
+    .idj-background-image{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: top center;
+    }
 }
