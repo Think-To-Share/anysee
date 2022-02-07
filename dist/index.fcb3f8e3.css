@@ -452,33 +452,41 @@ progress {
   position: relative;
   z-index: 2;
 }
-.anysee-main .main-text .anysee-heading {
+.anysee-main .main-text .main-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  border-radius: 7px;
+}
+.anysee-main .main-text .main-container .anysee-heading {
   font-family: "StereoGothic";
   font-weight: 700;
   font-size: 3em;
   text-transform: uppercase;
   color: #fff;
+  padding-top: 12%;
 }
-.anysee-main .main-text .anysee-heading span {
+.anysee-main .main-text .main-container .anysee-heading span {
   font-weight: 800;
 }
 @media (min-width: 768px) {
-  .anysee-main .main-text .anysee-heading {
+  .anysee-main .main-text .main-container .anysee-heading {
     font-size: 4em;
   }
 }
-.anysee-main .main-text .anysee-heading-text {
+.anysee-main .main-text .main-container .anysee-heading-text {
   font-family: "Helvetica 35 Thin", sans-serif;
   font-weight: 400;
   font-size: 2.5em;
   color: #fff;
 }
 @media (min-width: 768px) {
-  .anysee-main .main-text .anysee-heading-text {
+  .anysee-main .main-text .main-container .anysee-heading-text {
     font-size: 4.5em;
   }
 }
-.anysee-main .main-text .anysee-text {
+.anysee-main .main-text .main-container .anysee-text {
   width: 50%;
   font-family: "Helvetica 35 Thin", sans-serif;
   font-weight: 400;
@@ -490,9 +498,33 @@ progress {
   display: none;
 }
 @media (min-width: 768px) {
-  .anysee-main .main-text .anysee-text {
+  .anysee-main .main-text .main-container .anysee-text {
     display: block;
   }
+}
+.anysee-main .main-text .main-container .r-video {
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid #0E6064;
+}
+.anysee-main .main-text .main-container .grid-text {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.anysee-main .main-text .main-container .grid-section-right-text {
+  background: linear-gradient(to bottom, rgba(13, 13, 13, 0.49) 0%, rgba(93, 93, 93, 0.49) 100%);
+  border-radius: 7px;
+  padding: 10px;
+  border: 1px solid #0E6064;
+}
+.anysee-main .main-text .main-container .grid-section-right-text .grid-text {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.anysee-main .main-text .main-container .grid-section-right-text .grid-text .sea-green {
+  color: #26F4FE;
 }
 .anysee-main .main-text .grid-section {
   background: linear-gradient(to bottom, rgba(13, 13, 13, 0.49) 0%, rgba(93, 93, 93, 0.49) 100%);
