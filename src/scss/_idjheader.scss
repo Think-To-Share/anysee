@@ -1,11 +1,11 @@
-.anysee-main{
+.idj-anysee-main{
     padding-top: 50px;
     padding-left:50px;
     padding-right:50px;
-    .anysee-header-menu{
+    .idj-anysee-header-menu{
         position: relative;
         z-index: 2;
-        .anysee-menu{
+        .idj-anysee-menu{
             display: flex;
             justify-content: center;
             @media (min-width: 768px){
@@ -19,12 +19,12 @@
                     }
                 }
             }
-            .anysee-btn-container{
+            .idj-anysee-btn-container{
                 display: none;
                 @media (min-width: 768px){
                     display: block;
                 }
-                .anysee-btn{
+                .idj-anysee-btn{
                     text-decoration: none;
                     text-align: center;
                     color: #fff;
